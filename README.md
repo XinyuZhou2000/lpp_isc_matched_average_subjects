@@ -34,9 +34,9 @@ Our procedure (described in details in [paper](./papers/isc_matched_average_subj
 
 0. Install the Python dependencies first:
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 1. Download the original LPP dataset from OpenNeuro, then edit `lpp_path` in
    `set_paths.py` or set the `LPP_PATH` environment variable.
