@@ -5,6 +5,6 @@ __pycache__/
 .env
 .cache/
 nilearn_cache/
-lpp_cn_average_subject_matched/
-lpp_en_average_subject_matched/
-lpp_fr_average_subject_matched/
+/lpp_cn_average_subject_matched/
+/lpp_en_average_subject_matched/
+/lpp_fr_average_subject_matched/
