@@ -10,11 +10,14 @@ However, given that the sample sizes in the LPP dataset differ across languages,
 Indeed, when average subjects are built from all available participants, the English average subject is based on substantially more participants than the French average subject. This difference could confound later comparisons of encoding performance across languages. Even if the number of subjects is matched, the quality of the measurements and the participants' engagement in the task can lead to different inter-subject correlations (ISC). To address this issue, we here provide three averaged subjects (one for each language) matched in terms of of number of participants (n=28) and mean ISC. More precisely, this repository contains:
 
 - [mask_lpp_all.nii.gz](./masks/mask_lpp_all.nii.gz): a binary mask common to all three languages.
-- three folders, one for each language, containing 9 nifti files obtained by averaging the participants listed in the `summary.json` file, and the preprocessing settings used to generate the files:
+- three folders, one for each language, containing 9 nifti files obtained by averaging the 28 participants listed in the accompanying `summary.json` file, and the preprocessing settings used to generate the files:
   - [English average subject](./lpp_averaged_subject/lpp_en_average_subject_matched/)
   - [Chinese average subject](./lpp_averaged_subject/lpp_cn_average_subject_matched/)
   - [French average subject](./lpp_averaged_subject/lpp_fr_average_subject_matched/)
-- Three inter-subject correlation maps: [final ISC map](./isc_maps/)
+- Three inter-subject correlation maps:
+   -  [English group ISC map](./isc_maps/isc_en_matched_n28_seed1234.nii.gz)
+   -  [French group ISC map](./isc_maps/isc_cn_matched_n28_seed1234.nii.gz)
+   -  [Chines group ISC map](./isc_maps/isc_fr_matched_n28_seed1234.nii.gz)
 - Python code used to select the subjects, compute the ISC and average subjects.
 - An example downstream use case is described in the M2 thesis of Xinyu Zhou, [M2_Dissertation_XinyuZhou.pdf](./papers/M2_Dissertation_XinyuZhou.pdf). The thesis uses these ISC-matched average subjects for cross-lingual transfer analyses, so that English, Chinese, and French fMRI targets can be compared while controlling for participant count and group-level reliability.
 
