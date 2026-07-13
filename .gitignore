@@ -8,3 +8,6 @@ nilearn_cache/
 /lpp_cn_average_subject_matched/
 /lpp_en_average_subject_matched/
 /lpp_fr_average_subject_matched/
+isc_maps/*.pkl
+isc_maps/*.h5
+isc_maps/*.hdf5
