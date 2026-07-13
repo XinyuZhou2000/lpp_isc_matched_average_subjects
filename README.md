@@ -107,6 +107,7 @@ groups were selected with fixed seed `1234`.
 
 The selected English participants were:
 
+```text
 sub-EN061 sub-EN062 sub-EN064 sub-EN067
 sub-EN069 sub-EN070 sub-EN073 sub-EN074
 sub-EN075 sub-EN076 sub-EN082 sub-EN083
@@ -114,11 +115,13 @@ sub-EN084 sub-EN087 sub-EN089 sub-EN093
 sub-EN095 sub-EN097 sub-EN098 sub-EN099
 sub-EN100 sub-EN101 sub-EN105 sub-EN106
 sub-EN110 sub-EN113 sub-EN114 sub-EN115
+```
 
 ### C.2 Chinese
 
 The selected Chinese participants were:
 
+```text
 sub-CN001 sub-CN002 sub-CN003 sub-CN005
 sub-CN006 sub-CN009 sub-CN010 sub-CN011
 sub-CN013 sub-CN015 sub-CN016 sub-CN019
@@ -126,19 +129,21 @@ sub-CN020 sub-CN021 sub-CN022 sub-CN023
 sub-CN024 sub-CN025 sub-CN027 sub-CN028
 sub-CN029 sub-CN030 sub-CN031 sub-CN032
 sub-CN033 sub-CN034 sub-CN036 sub-CN037
-
+```
 
 ### C.3 French
 
 The selected French participants were:
 
-sub-FR001 sub-FR002 sub-FR003 sub-FR004  
-sub-FR005 sub-FR006 sub-FR007 sub-FR008  
-sub-FR009 sub-FR010 sub-FR011 sub-FR012  
-sub-FR013 sub-FR014 sub-FR015 sub-FR016  
-sub-FR017 sub-FR018 sub-FR019 sub-FR020  
-sub-FR022 sub-FR023 sub-FR024 sub-FR025  
+```text
+sub-FR001 sub-FR002 sub-FR003 sub-FR004
+sub-FR005 sub-FR006 sub-FR007 sub-FR008
+sub-FR009 sub-FR010 sub-FR011 sub-FR012
+sub-FR013 sub-FR014 sub-FR015 sub-FR016
+sub-FR017 sub-FR018 sub-FR019 sub-FR020
+sub-FR022 sub-FR023 sub-FR024 sub-FR025
 sub-FR026 sub-FR028 sub-FR029 sub-FR030
+```
 
 ## References
 
