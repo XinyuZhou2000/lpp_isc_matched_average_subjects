@@ -1,19 +1,21 @@
 # lpp isc-matched average subjects
 
 The dataset ["Le Petit Prince"](https://openneuro.org/datasets/ds003643/versions/2.0.7) (Li, Hale & Palier, 2025) 
-provides 3T functional magnetic resonance imaging (fMRI) data from 49 English, 35 Chinese and 28 French participants who listened an audiobook of *Le Petit Prince*.
+provides 3T functional magnetic resonance imaging (fMRI) data from 49 English, 35 Chinese and 28 French participants who listened an audiobook of *Le Petit Prince*, spliced into 9 segments of ~10min.  
 
-As the participants listened exactly to the same stimuli, instead of running analyses on individual data, it is sometimes relevant to run them on an average subject obtained by spatially aligning and averaging all the individual functional time series, for each of the 9 runs. A repository provides the average subjects for the LPP project in all three languages (English, Chinese, French) : <https://github.com/l-bg/llms_brain_lateralization>.
+Because the participants in a given language listened exactly to the same stimuli, instead of running analyses on individual data, it is sometimes relevant to run them on an average subject obtained by spatially aligning and averaging all the individual functional time series, for each of the 9 segments. Thus, the average subjects for the LPP project computed over the full sample in all three languages (English, Chinese, French) are available at <https://github.com/l-bg/llms_brain_lateralization>.
 
-Given that the sample sizes in the LPP dataset differ across languages, these average subjects are **not** appropriate for between language comparisons. Indeed, when average subjects are built from all available participants, the English average subject is based on substantially more participants than the French average subject, and has higher reliability. This difference could confound later comparisons of encoding performance across languages. Even if the number of subjects is matched, the quality of the measurements and the participants' engagement in the task can lead to different ISC. To address this issue, we here provide three averaged subjects (one for each language) matched in terms of of number of participants (n=28) and mean inter-subject-correlations (ISC). More precisely, this repository contains:
+However, given that the sample sizes in the LPP dataset differ across languages, these average subjects are **not** appropriate for between language comparisons. 
 
-- A [mask_lpp_all.nii.gz](./masks/mask_lpp_all.nii.gz) common to all three languages.
-- A folder for each language, containing the 9 runs for the average subject computed from the participants listed in the `summary.json` file, and preprocessing settings used to generate the files:
+Indeed, when average subjects are built from all available participants, the English average subject is based on substantially more participants than the French average subject. This difference could confound later comparisons of encoding performance across languages. Even if the number of subjects is matched, the quality of the measurements and the participants' engagement in the task can lead to different inter-subject correlations (ISC). To address this issue, we here provide three averaged subjects (one for each language) matched in terms of of number of participants (n=28) and mean ISC. More precisely, this repository contains:
+
+- [mask_lpp_all.nii.gz](./masks/mask_lpp_all.nii.gz): a binary mask common to all three languages.
+- three folders, one for each language, containing 9 nifti files obtained by averaging the participants listed in the `summary.json` file, and the preprocessing settings used to generate the files:
   - [English average subject](./lpp_averaged_subject/lpp_en_average_subject_matched/)
   - [Chinese average subject](./lpp_averaged_subject/lpp_cn_average_subject_matched/)
   - [French average subject](./lpp_averaged_subject/lpp_fr_average_subject_matched/)
-- The final voxel-wise inter-subject correlation maps for the three matched average-subject groups:[final ISC map](./isc_maps/)
-- The code used to select the subjects, compute the average subjects, and compute the final ISC maps.
+- Three inter-subject correlation maps: [final ISC map](./isc_maps/)
+- Python code used to select the subjects, compute the ISC and average subjects.
 - An example downstream use case is described in the M2 thesis of Xinyu Zhou, [M2_Dissertation_XinyuZhou.pdf](./papers/M2_Dissertation_XinyuZhou.pdf). The thesis uses these ISC-matched average subjects for cross-lingual transfer analyses, so that English, Chinese, and French fMRI targets can be compared while controlling for participant count and group-level reliability.
 
 ## Procedure
